@@ -1,0 +1,21 @@
+{
+  "name": "my-game-libraries-server",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "server/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server/main.js",
+    "start": "nodemon server/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.0",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "nodemon": "^3.1.10"
+  }
+}

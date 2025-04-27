@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <title>NPC Movement Patterns (Animations)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <ul class="tabs">
+      <li><a class="tab" onclick="changeSpriteSheet('sprite1')">Enemy 1</a></li>
+      <li><a class="tab" onclick="changeSpriteSheet('sprite2')">Enemy 2</a></li>
+      <li><a class="tab" onclick="changeSpriteSheet('sprite3')">Enemy 3</a></li>
+      <li><a class="tab" onclick="changeSpriteSheet('sprite4')">Enemy 4</a></li>
+    </ul>
+  </nav>
+  <canvas id="canvas1"></canvas>
+
+  <div class="scripts">
+    <script type="module" src="http://localhost:3000/project-3/classes/enemy/enemy.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/enemy/enemy1.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/enemy/enemy2.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/enemy/enemy3.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/enemy/enemy4.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/sprite/sprite.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/sprite/sprite1.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/sprite/sprite2.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/sprite/sprite3.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/classes/sprite/sprite4.js"></script>
+    <script type="module" src="http://localhost:3000/project-3/global.js"></script>
+    <script type="module" src="scripts/control.js"></script>
+  </div>
+
+</body>
+</html>

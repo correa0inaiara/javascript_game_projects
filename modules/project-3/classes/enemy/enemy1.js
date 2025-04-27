@@ -1,4 +1,12 @@
-/** @type {HTMLCanvasElement} */
+// const FOLDER = 'assets/enemies/'
+// const canvas = document.getElementById('canvas1')
+// const ctx = canvas.getContext('2d')
+// CANVAS_WIDTH = canvas.width = 500
+// CANVAS_HEIGHT = canvas.height = 1000
+// const numberOfEnemies = 100
+// const enemiesArray = []
+
+import { Enemy } from "./enemy"
 
 // enemy1 = {
 //   x: 10,
@@ -9,11 +17,12 @@
 
 // const enemyImage = new Image()
 // enemyImage.src = FOLDER + 'enemy1.png'
+// let gameFrame = 0
 
-class Enemy {
-  constructor() {
-    this.image = new Image()
-    this.image.src = FOLDER + 'enemy3.png'
+export class Enemy1 extends Enemy {
+  constructor(enemyImageName = 'enemy1.png') {
+    super(enemyImageName)
+
     this.spriteWidth = 293
     this.spriteHeight = 155
     this.width = this.spriteWidth / 2.5
@@ -43,25 +52,3 @@ class Enemy {
       this.x, this.y, this.width, this.height)
   }
 }
-
-// const enemy1 = new Enemy()
-// const enemy2 = new Enemy()
-
-for (let i = 0; i < numberOfEnemies; i++) {
-  enemiesArray.push(new Enemy())
-}
-// console.log(enemiesArray)
-
-function animate() {
-  ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-  // enemy1.update()
-  // enemy1.draw()
-
-  enemiesArray.forEach((enemy) => {
-    enemy.update()
-    enemy.draw()
-  })
-  gameFrame++
-  requestAnimationFrame(animate)
-}
-animate()

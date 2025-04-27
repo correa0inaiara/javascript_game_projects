@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "title": "project-1",
+      "subtitle": "Sprite Animations",
+      "description": "In this first project we leard to develop a visualizer to each of our sprite sheet's animation.",
+      "image": ""
+    },
+    {
+      "title": "project-2",
+      "subtitle": "Parallax Backgrounds",
+      "description": "With the parallax effect we can simulate 3d perspective, as the ground moves, each of the backgorund images moves, but each one has a different speed.",
+      "image": ""
+    },
+    {
+      "title": "project-3",
+      "subtitle": "NPC Movement Patterns",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    },
+    {
+      "title": "project-1",
+      "subtitle": "Collision Animations",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    },
+    {
+      "title": "project-1",
+      "subtitle": "Point and Shoot Game",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    },
+    {
+      "title": "project-1",
+      "subtitle": "Enemy Variaty",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    },
+    {
+      "title": "project-1",
+      "subtitle": "Side-scroller Game with Mobile Support",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    },
+    {
+      "title": "project-1",
+      "subtitle": "State Management",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    },
+    {
+      "title": "project-1",
+      "subtitle": "Final Endless Game with All The Features",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neciaculis mauris.",
+      "image": ""
+    }
+  ]
+}

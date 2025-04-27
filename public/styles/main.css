@@ -1,0 +1,4 @@
+main#main figure.image.is-4by3.background-image img {
+  filter: grayscale(1);
+  opacity: 0.3;
+}

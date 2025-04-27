@@ -19,3 +19,8 @@
 .controls, select, option {
   font-size: 1.2rem;
 }
+
+.background-image {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
