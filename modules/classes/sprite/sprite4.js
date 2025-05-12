@@ -1,15 +1,15 @@
-import { CANVAS_HEIGHT, CANVAS_WIDTH, ctx, gameFrame } from "../../global"
-import { Enemy3 } from "../enemy/enemy3"
-import { Sprite } from "./sprite"
+import { CANVAS_HEIGHT, CANVAS_WIDTH, ctx, gameFrame } from "../../utils/global.js"
+import { Enemy4 } from "../enemy/enemy4.js"
+import { Sprite } from "./sprite.js"
 
-export class Sprite3 extends Sprite {
+export class Sprite4 extends Sprite {
   constructor() {
     super()
   }
 
   createEnemies(numberOfEnemies = 100) {
     for (let i = 0; i < numberOfEnemies; i++) {
-      this.enemiesArray.push(new Enemy3())
+      this.enemiesArray.push(new Enemy4())
     }
   }
 

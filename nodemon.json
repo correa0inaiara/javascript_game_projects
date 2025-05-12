@@ -1,0 +1,11 @@
+{
+  "verbose": true,
+  "watch": [
+    "**/*.js",
+    "**/*.hbs"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,hbs,html,css,json"
+}

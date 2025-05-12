@@ -1,25 +1,31 @@
- <div class="cell">
-  <div class="card">
-    <div class="card-image p-5">
-      <figure class="image is-4by3 background-image">
-        <img src="../no-preview-background.png" alt="Joystick background image, illustrating there's no preview of this project" />
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media">
-        <div class="media-content">
-          <p class="title is-4">Project 1</p>
-          <p class="subtitle is-6">Sprite Animations</p>
-        </div>
+<a target="_blank" href="{{this.name}}">
+  <div id="cell" class="cell">
+    <div class="card">
+      <div class="card-image p-5">
+        <figure class="image is-4by3 background-image">
+          {{#if (eq this.image.src "")}}
+            if
+            <img src="/imgs/no-preview-background.png"
+              alt="Joystick background image, illustrating there's no preview of this project" />
+            {{else}}
+            else
+            <img src="/imgs/{{this.image.src}}"
+              alt="{{this.image.alt}}" />
+          {{/if}}
+        </figure>
       </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4 mb-2">{{this.title}}</p>
+            <p class="subtitle is-6">{{this.subtitle}}</p>
+          </div>
+        </div>
 
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-        iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
-        <a href="#">#responsive</a>
-        <br />
-        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        <div class="content">
+          {{this.description}}
+        </div>
       </div>
     </div>
   </div>
-</div>
+</a>

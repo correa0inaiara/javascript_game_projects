@@ -1,11 +1,16 @@
-import { Sprite1 } from "http://localhost:3000/project-3/classes/sprite/sprite1"
-import { Sprite2 } from "http://localhost:3000/project-3/classes/sprite/sprite2"
-import { Sprite3 } from "http://localhost:3000/project-3/classes/sprite/sprite3"
-import { Sprite4 } from "http://localhost:3000/project-3/classes/sprite/sprite4"
-import { SPRITE_SHEETS } from "./global"
+import { Sprite1 } from "http://localhost:3000/classes/sprite/sprite1.js"
+import { Sprite2 } from "http://localhost:3000/classes/sprite/sprite2.js"
+import { Sprite3 } from "http://localhost:3000/classes/sprite/sprite3.js"
+import { Sprite4 } from "http://localhost:3000/classes/sprite/sprite4.js"
+import { SPRITE_SHEETS } from "http://localhost:3000/utils/global.js"
+
+const CANVAS_WIDTH = 500
+const CANVAS_HEIGHT = 1000
+const FOLDER = 'assets/enemies/'
 
 const renderSpriteSheet1 = () => {
   const sprite1 = new Sprite1()
+  sprite1.setCanvasProperties('canvas1', CANVAS_WIDTH, CANVAS_HEIGHT)
   sprite1.createEnemies()
   sprite1.animate()
 }
@@ -28,7 +33,11 @@ const renderSpriteSheet4 = () => {
   sprite4.animate()
 }
 
-const changeSpriteSheet = (spriteSheetName) => {
+// const initializations = () => {
+  
+// }
+
+export const changeSpriteSheet = (spriteSheetName) => {
   switch (spriteSheetName) {
     case SPRITE_SHEETS.SPRITE_1:
       renderSpriteSheet1()
@@ -44,3 +53,5 @@ const changeSpriteSheet = (spriteSheetName) => {
       break;
   }
 }
+
+// initializations()

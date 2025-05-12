@@ -1,4 +1,26 @@
+main#main div#cell.cell {
+  height: 100%;
+  display: grid;
+}
+
 main#main figure.image.is-4by3.background-image img {
   filter: grayscale(1);
   opacity: 0.3;
+}
+
+.card {
+  --bulma-card-background-color: #ACC8E5;
+  --bulma-card-color: var(--bulma-background);
+}
+
+.card .title {
+  --bulma-title-color: var(--bulma-background);
+}
+
+.card .subtitle {
+  --bulma-subtitle-color: var(--bulma-background);
+}
+
+.footer {
+  --bulma-footer-padding: 3rem 3rem 3rem;
 }

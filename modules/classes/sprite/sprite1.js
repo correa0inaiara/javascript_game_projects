@@ -1,15 +1,15 @@
-import { CANVAS_HEIGHT, CANVAS_WIDTH, ctx, gameFrame } from "../../global"
-import { Enemy2 } from "../enemy/enemy2"
-import { Sprite } from "./sprite"
+import { Canvas } from "../canvas/canvas.js"
+import { Enemy1 } from "../enemy/enemy1.js"
+import { Sprite } from "./sprite.js"
 
-export class Sprite2 extends Sprite {
+export class Sprite1 extends Sprite {
   constructor() {
     super()
   }
 
   createEnemies(numberOfEnemies = 100) {
     for (let i = 0; i < numberOfEnemies; i++) {
-      this.enemiesArray.push(new Enemy2())
+      this.enemiesArray.push(new Enemy1())
     }
   }
 
@@ -20,11 +20,11 @@ export class Sprite2 extends Sprite {
       enemy.update()
       enemy.draw()
     })
-    gameFrame++
+    this.increaseGameframe()
     requestAnimationFrame(animate)
   }
 
   clearRect() {
-    ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
+    this.ctx.clearRect(0, 0, this.)
   }
 }

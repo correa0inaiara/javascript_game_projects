@@ -6,7 +6,7 @@
 // const numberOfEnemies = 100
 // const enemiesArray = []
 
-import { Enemy } from "./enemy"
+import { Enemy } from "./enemy.js"
 
 // enemy1 = {
 //   x: 10,
@@ -20,15 +20,15 @@ import { Enemy } from "./enemy"
 // let gameFrame = 0
 
 export class Enemy1 extends Enemy {
-  constructor(enemyImageName = 'enemy1.png') {
-    super(enemyImageName)
+  constructor(folderPath, enemyImageName = 'enemy1.png', canvas) {
+    super(folderPath, enemyImageName, canvas)
 
     this.spriteWidth = 293
     this.spriteHeight = 155
     this.width = this.spriteWidth / 2.5
     this.height = this.spriteHeight / 2.5
-    this.x = Math.random() * (canvas.width - this.width)
-    this.y = Math.random() * (canvas.height - this.height)
+    this.x = Math.random() * (this.canvas.width - this.width)
+    this.y = Math.random() * (this.canvas.height - this.height)
     // we are generating a random number between 0 and 4
     // and starting from minus 2 and plus 2
     // this.speed = Math.random() * 4 - 2

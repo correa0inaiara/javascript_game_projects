@@ -1,8 +1,8 @@
-import { Enemy } from "./enemy";
+import { Enemy } from "./enemy.js";
 
 export class Enemy3 extends Enemy {
-  constructor(enemyImageName = 'enemy3.png') {
-    super(enemyImageName)
+  constructor(folderPath, enemyImageName = 'enemy3.png', canvas) {
+    super(folderPath, enemyImageName, canvas)
 
     // this.spriteWidth = 293
     // this.spriteHeight = 155
